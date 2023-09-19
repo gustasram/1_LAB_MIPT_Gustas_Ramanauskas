@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnColorChange.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                tv.setTextSize(30); 
+                tv.setTextSize(30); // teksto dydis pakeičiamas tik dėl to, kad būtų aiškiai matomas spalvos pokytis
                 tv.setTextColor(Color.parseColor("#FF0000"));
             }
         });
