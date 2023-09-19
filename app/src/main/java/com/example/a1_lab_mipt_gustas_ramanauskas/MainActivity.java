@@ -42,6 +42,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // komentaras yra skirtas Commit Revert'ui, kadangi kitos kodo dalys yra svarbios:)
+        IDE konfigūravimas ir „Hello World“ App;
     }
 }
