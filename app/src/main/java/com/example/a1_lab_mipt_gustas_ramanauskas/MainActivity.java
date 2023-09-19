@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tv;
     Button btnTextChange;
     Button btnColorChange;
+    Button btnTextSizeChange;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         tv = (TextView) findViewById(R.id.textView);
         btnTextChange = (Button) findViewById(R.id.btnTextChange);
         btnColorChange = (Button) findViewById(R.id.btnColorChange);
+        btnTextSizeChange = (Button) findViewById(R.id.btnTextSizeChange);
 
         btnTextChange.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -29,8 +31,14 @@ public class MainActivity extends AppCompatActivity {
         btnColorChange.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                tv.setTextSize(30);
                 tv.setTextColor(Color.parseColor("#FF0000"));
+            }
+        });
+
+        btnTextSizeChange.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                tv.setTextSize(30); // teksto dydis pakeičiamas tik dėl to, kad būtų aiškiai matomas spalvos pokytis
             }
         });
     }
