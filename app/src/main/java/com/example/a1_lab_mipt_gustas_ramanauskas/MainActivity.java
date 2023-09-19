@@ -41,5 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 tv.setTextSize(30); // teksto dydis pakeičiamas tik dėl to, kad būtų aiškiai matomas spalvos pokytis
             }
         });
+
+        // komentaras yra skirtas Commit Revert'ui, kadangi kitos kodo dalys yra svarbios:)
     }
 }
